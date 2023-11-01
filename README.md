@@ -5,4 +5,5 @@ Welcome to my repository! Here's the space where i keep some of my SKE projects,
 # Subjects
 | Code | Name | Semester | Instructor | Teacher Assistant |
 |:----:|:----:|:--------:|:----------:|:-----------------:|
-|01219114|Programming 1|1/2023|1) Supaporn Erjongmanee\n 2) Withawat Tangtrongpiroj | |
+|01219114|Programming 1|1/2023|1) Supaporn Erjongmanee
+ 2) Withawat Tangtrongpiroj | |
