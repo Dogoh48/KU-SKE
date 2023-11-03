@@ -1,6 +1,6 @@
 ## KU-SKE
 
-Welcome to my repository! Here's the space where i contain some of my SKE projects, elab and assignments. Feel free to modify, or share!
+Welcome to my repository! Here's the space where i contain some of my SKE projects and assignments. Feel free to modify or share!
 
 # Subjects
 |   Code   |       Name       | Semester |        Instructor         |   Teacher Assistant    |
