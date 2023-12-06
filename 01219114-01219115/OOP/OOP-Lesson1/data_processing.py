@@ -14,7 +14,7 @@ with open(os.path.join(__location__, 'Countries.csv')) as f:
     rows = csv.DictReader(f)
     for r in rows:
         countries.append(dict(r))
-
+print(cities)
 # Print the average temperature for all the cities in Italy
 temps = []
 my_country = 'Italy'
