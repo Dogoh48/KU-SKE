@@ -84,9 +84,9 @@ my_DB.insert(table2)
 my_table1 = my_DB.search('cities')
 my_table1_filtered = my_table1.filter(lambda x: x['country'] == 'Italy')
 my_table1_selected = my_table1.select(['city', 'latitude'])
-print(my_table1)
-print()
-print(my_table1_selected)
+#print(my_table1)
+#print(my_table1_filtered)
+#print(my_table1_selected)
 
 temps = []
 for item in my_table1_filtered.table:
@@ -95,8 +95,7 @@ print(sum(temps)/len(temps))
 print("Using aggregation")
 print(my_table1_filtered.aggregate(lambda x: sum(x)/len(x), 'temperature'))
 
-print()
 my_table2 = my_DB.search('countries')
 my_table3 = my_table1.join(my_table2, 'country')
 my_table3_filtered = my_table3.filter(lambda x: x['EU'] == 'no').filter(lambda x: float(x['temperature']) < 5.0)
-print(my_table3_filtered.table)
+#print(my_table3_filtered.table)
