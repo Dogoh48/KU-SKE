@@ -9,6 +9,11 @@ class AccountDB:
         else:
             print(account, "Duplicated account; nothing to be insert")
 
+    def delete(self, number):
+        for i in range(len(self.account_database)):
+            if self.account_database[i].number == number:
+                del self.account_database[i]
+
     def search_index(self, number):
         for i in range(len(self.account_database)):
             if self.account_database[i].number == number:
@@ -19,7 +24,7 @@ class AccountDB:
         for account in self.account_database:
             if account.number == number:
                 return account
-        raise ValueError
+        return None
     
     def __str__(self):
         s = ''
@@ -62,5 +67,5 @@ my_account_DB.search_public("0003").deposit(50)
 print(my_account_DB)
 my_account_DB.search_public("0003").withdraw(100)
 print(my_account_DB)
-my_account_DB.search_public("0010").deposit(50)
+my_account_DB.delete('0004')
 print(my_account_DB)
